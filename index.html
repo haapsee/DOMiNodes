@@ -3,47 +3,36 @@
     <head>
         <meta charset="UTF-8" />
         <title>DOMiNodes Testing Ground</title>
-        <style>
-            body {
-                font-family: system-ui, sans-serif;
-                padding: 2rem;
-                background: #f4f4f9;
-            }
-
-            /* Testing our custom CSS variable */
-            .danger-zone {
-                --domi-primary: #dc3545;
-            }
-
-            /* Testing our ::part() escape hatch */
-            .custom-shape::part(base) {
-                border-radius: 50px;
-                border: 2px solid black;
-            }
-        </style>
-
-        <!-- Import our library as an ES Module -->
+        <link rel="stylesheet" href="src/style/theme.css" />
         <script type="module" src="./index.js"></script>
     </head>
     <body>
-        <h2>Welcome to DOMiNodes</h2>
+        <domi-main>
+            <h2>Welcome to DOMiNodes</h2>
 
-        <!-- 1. The default component -->
-        <domi-button></domi-button>
-
-        <br /><br />
-
-        <!-- 2. Using the slot to change the text -->
-        <domi-button>Click Me!</domi-button>
-
-        <br /><br />
-
-        <!-- 3. Overriding the color via CSS variables -->
-        <domi-button class="danger-zone">Delete Account</domi-button>
-
-        <br /><br />
-
-        <!-- 4. Modifying the shape using ::part() -->
-        <domi-button class="custom-shape">Pill Button</domi-button>
+            <domi-box flex-row>
+                <domi-button primary>PRIMARY</domi-button>
+                <domi-button secondary>SECONDARY</domi-button>
+                <domi-button accent>ACCENT</domi-button>
+                <domi-button accent-secondary>ACCENT SECONDARY</domi-button>
+                <domi-button success>SUCCESS</domi-button>
+                <domi-button warning>WARNING</domi-button>
+                <domi-button danger>DANGER</domi-button>
+                <domi-button info>INFO</domi-button>
+            </domi-box>
+            <domi-box flex-row>
+                <domi-button primary-inverted>PRIMARY</domi-button>
+                <domi-button secondary-inverted>SECONDARY</domi-button>
+                <domi-button accent-inverted>ACCENT</domi-button>
+                <domi-button accent-secondary-inverted
+                    >ACCENT SECONDARY</domi-button
+                >
+                <domi-button success-inverted>SUCCESS</domi-button>
+                <domi-button warning-inverted>WARNING</domi-button>
+                <domi-button danger-inverted>DANGER</domi-button>
+                <domi-button info-inverted>INFO</domi-button>
+            </domi-box>
+            <br /><br />
+        </domi-main>
     </body>
 </html>

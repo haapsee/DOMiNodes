@@ -1,0 +1,68 @@
+:root {
+    --domi-bg-base: #f8f7f4; /* Cashmere Cream - Use for the main page background */
+    --domi-bg-surface: #ebe6df; /* Warm Ecru - Use for cards or elevated containers */
+    --domi-bg-dark: #1e1c1a; /* Smoked Obsidian - A very rich, warm, near-black */
+    --domi-bg-dark-surface: #2a2826; /* Deep Walnut - Slightly lighter for elevated dark cards */
+    --domi-text-main: #2c2c2c; /* Soft Charcoal - Much softer on the eyes than pure black */
+
+    --domi-text-muted: #7a7a7a; /* Tweed Gray - For secondary text or subtitles */
+    --domi-text-bright: #fcfbf8; /* Alabaster White - A warm, glowing off-white */
+
+    --domi-primary: #1c2826; /* Oxford Green - The default primary color */
+    --domi-secondary: #1b263b; /* Estate Navy - The default secondary color */
+
+    /* 🌲 Primary (Oxford Green) Background */
+    /* A very soft, dusty willow green */
+    --domi-primary-bg: #e5eae7;
+
+    /* 🖋️ Secondary (Estate Navy) Background */
+    /* A pale, misty slate blue */
+    --domi-secondary-bg: #e3e8ed;
+
+    /* 🍷 Accent Burgundy (Vintage Bordeaux) Background */
+    /* A faded, antique rose parchment */
+    --domi-accent-bg: #efe8e9;
+
+    /* ⚜️ Accent Gold (Antique Brass) Background */
+    /* A warm, champagne sand color */
+    --domi-accent-secondary-bg: #f6f3eb;
+
+    --domi-primary-900: var(
+        --domi-primary
+    ); /* Oxford Green - A very deep, near-black forest green */
+    --domi-primary-700: #2e403d; /* Muted Pine - Great for button hover states */
+
+    --domi-secondary-900: var(
+        --domi-secondary
+    ); /* Estate Navy - A rich, traditional dark blue */
+    --domi-secondary-700: #415a77; /* Steel Blue - Good for secondary buttons or borders */
+
+    --domi-accent: #5c2c35;
+    --domi-accent-secondary: #b89c50;
+    --domi-accent-burgundy: #5c2c35; /* Vintage Bordeaux - Perfect for error states or alerts */
+    --domi-accent-gold: #b89c50; /* Antique Brass - For focus rings, active states, or icons */
+
+    --domi-success: #425a46;
+    --domi-success-bg: #e1e8e3; /* A very faint, soft green for banner backgrounds */
+
+    --domi-danger: #8b3a3a;
+    --domi-danger-bg: #f0e6e6; /* A faint, soft blush for error backgrounds */
+
+    --domi-warning: #c89b3c;
+    --domi-warning-bg: #f7efe0; /* A warm, buttery cream for warning backgrounds */
+
+    --domi-info: #5d738a;
+    --domi-info-bg: #e8ecef; /* A cool, misty gray for info backgrounds */
+
+    --domi-disabled-bg: #e3dfd8; /* Faded Parchment - A dull, flat beige-gray */
+    --domi-disabled-text: #a6a29c; /* Dusty Taupe - Low contrast, but still legible */
+
+    --domi-radius: 6px;
+    --domi-padding: 6px;
+
+    --domi-flex-gap: 6px;
+}
+
+body {
+    background-color: var(--domi-bg-base);
+}
