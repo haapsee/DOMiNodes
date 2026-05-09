@@ -1,0 +1,18 @@
+{
+  "name": "dominodes",
+  "version": "0.0.1",
+  "description": "Web Component library",
+  "keywords": [
+    "dominodes",
+    "webcomponent",
+    "web",
+    "ui"
+  ],
+  "license": "MIT",
+  "author": "Eemil Haapsaari",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

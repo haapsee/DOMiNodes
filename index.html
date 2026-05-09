@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DOMiNodes Testing Ground</title>
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                padding: 2rem;
+                background: #f4f4f9;
+            }
+
+            /* Testing our custom CSS variable */
+            .danger-zone {
+                --domi-primary: #dc3545;
+            }
+
+            /* Testing our ::part() escape hatch */
+            .custom-shape::part(base) {
+                border-radius: 50px;
+                border: 2px solid black;
+            }
+        </style>
+
+        <!-- Import our library as an ES Module -->
+        <script type="module" src="./index.js"></script>
+    </head>
+    <body>
+        <h2>Welcome to DOMiNodes</h2>
+
+        <!-- 1. The default component -->
+        <domi-button></domi-button>
+
+        <br /><br />
+
+        <!-- 2. Using the slot to change the text -->
+        <domi-button>Click Me!</domi-button>
+
+        <br /><br />
+
+        <!-- 3. Overriding the color via CSS variables -->
+        <domi-button class="danger-zone">Delete Account</domi-button>
+
+        <br /><br />
+
+        <!-- 4. Modifying the shape using ::part() -->
+        <domi-button class="custom-shape">Pill Button</domi-button>
+    </body>
+</html>
