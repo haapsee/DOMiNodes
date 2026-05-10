@@ -15,6 +15,7 @@ export class DomiButton extends HTMLElement {
             cursor: pointer;
             font-family: inherit;
             font-size: 1rem;
+            text-transform: uppercase;
             transition: filter 0.2s;
             box-shadow: 1px 1px 1px var(--domi-bg-dark-surface);
           }

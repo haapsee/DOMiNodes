@@ -1,4 +1,7 @@
 :root {
+    --domi-bg: var(--domi-bg-base);
+    --domi-text: var(--domi-text-main);
+
     --domi-bg-base: #f8f7f4; /* Cashmere Cream - Use for the main page background */
     --domi-bg-surface: #ebe6df; /* Warm Ecru - Use for cards or elevated containers */
     --domi-bg-dark: #1e1c1a; /* Smoked Obsidian - A very rich, warm, near-black */
