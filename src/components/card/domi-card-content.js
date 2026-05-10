@@ -1,0 +1,28 @@
+export class DomiCardContent extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.innerHTML = `
+      <style>
+      :host {
+        display: block;
+        flex-grow: 1;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .card-content {
+        padding: var(--domi-padding);
+        color: inherit;
+        background-color: inherit;
+        line-height: 1.25;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      </style>
+      <div class="card-content" part="base">
+        <slot></slot>
+      </div>
+      `;
+  }
+}

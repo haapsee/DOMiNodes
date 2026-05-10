@@ -64,6 +64,10 @@
     --domi-padding: 6px;
 
     --domi-flex-gap: 6px;
+
+    --domi-card-min-height: 100px;
+    --domi-card-min-width: 300px;
+    --domi-card-max-width: 600px;
 }
 
 body {

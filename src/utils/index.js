@@ -19,11 +19,13 @@ export function generateStyleVariants(elementIdentifier) {
     :host([${variant}]) ${elementIdentifier} {
       background-color: var(--domi-${variant}-bg);
       color: var(--domi-${variant});
+      border-color: var(--domi-${variant});
     }
 
     :host([${variant}-inverted]) ${elementIdentifier} {
       background-color: var(--domi-${variant});
       color: var(--domi-${variant}-bg);
+      border-color: var(--domi-${variant}-bg);
     }
     `;
   }
