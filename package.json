@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Web Component library",
   "scripts": {
-    "dev": "vite",
+    "dev": "npx serve",
     "build": "vite build"
   },
   "exports": {

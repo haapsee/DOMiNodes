@@ -7,6 +7,7 @@ export class DomiButton extends HTMLElement {
     this.shadowRoot.innerHTML = `
         <style>
           button {
+            letter-spacing: 0.1em;
             background-color: var(--domi-bg-base, #007bff);
             color: var(--domi-text-main, #fff);
             border: none;

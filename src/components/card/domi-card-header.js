@@ -13,7 +13,7 @@ export class DomiCardHeader extends HTMLElement {
         font-family: inherit;
         font-size: 1.25rem;
         font-weight: normal;
-        letter-spacing: -0.01em;
+        letter-spacing: 0.05em;
       }
 
       </style>

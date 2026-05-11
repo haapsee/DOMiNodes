@@ -6,7 +6,11 @@ import { DomiCard } from "./src/components/card/domi-card.js";
 import { DomiCardHeader } from "./src/components/card/domi-card-header.js";
 import { DomiCardContent } from "./src/components/card/domi-card-content.js";
 import { DomiCardFooter } from "./src/components/card/domi-card-footer.js";
+import { DomiInput } from "./src/components/input/domi-input.js";
+import { DomiForm } from "./src/components/input/domi-form.js";
 
+window.customElements.define("domi-form", DomiForm);
+window.customElements.define("domi-input", DomiInput);
 window.customElements.define("domi-card-header", DomiCardHeader);
 window.customElements.define("domi-card-content", DomiCardContent);
 window.customElements.define("domi-card-footer", DomiCardFooter);

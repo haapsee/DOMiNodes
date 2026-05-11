@@ -96,6 +96,23 @@
                     <domi-card-footer>This is a footer</domi-card-footer>
                 </domi-card>
             </domi-box>
+            <domi-box>
+                <domi-form
+                    method="POST"
+                    style="width: 200px"
+                    action="http://localhost:5000"
+                >
+                    <domi-input
+                        name="testinput"
+                        label="Input"
+                        type="text"
+                        placeholder="placeholder..."
+                    >
+                        <span slot="help">This is a help</span>
+                    </domi-input>
+                    <domi-input type="submit" />
+                </domi-form>
+            </domi-box>
         </domi-main>
     </body>
 </html>

@@ -18,6 +18,7 @@ export class DomiCardContent extends HTMLElement {
         line-height: 1.25;
         font-size: 1rem;
         font-weight: 400;
+        letter-spacing: 0.1em;
       }
       </style>
       <div class="card-content" part="base">
