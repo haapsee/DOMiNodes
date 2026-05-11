@@ -2,6 +2,16 @@
   "name": "dominodes",
   "version": "0.0.1",
   "description": "Web Component library",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "keywords": [
     "dominodes",
     "webcomponent",
@@ -11,11 +21,10 @@
   "license": "MIT",
   "author": "Eemil Haapsaari",
   "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "devDependencies": {
-    "semantic-release": "^24.2.9"
+    "semantic-release": "^24.2.9",
+    "vite": "^8.0.12"
   }
 }
