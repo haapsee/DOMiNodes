@@ -1,3 +1,5 @@
+import themecss from "@dominodes/style/theme.css?raw";
+
 export class DomiInput extends HTMLElement {
   static formAssociated = true;
 
@@ -7,7 +9,9 @@ export class DomiInput extends HTMLElement {
     this.internals = this.attachInternals();
     this.shadowRoot.innerHTML = `
       <style>
-        :host {
+      ${themecss}
+
+      :host {
           display: block;
           width: 100%;
         }

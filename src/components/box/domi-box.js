@@ -1,9 +1,13 @@
+import themecss from "@dominodes/style/theme.css?raw";
+
 export class DomiBox extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
+      ${themecss}
+
         .box {
           background-color: var(--domi-bg-base);
           color: var(--domi-text-main);

@@ -1,4 +1,5 @@
-// src/domi-form.js
+import themecss from "@dominodes/style/theme.css?raw";
+
 export class DomiForm extends HTMLElement {
   static get observedAttributes() {
     return ["action", "method"];
@@ -9,7 +10,9 @@ export class DomiForm extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
-        :host {
+      ${themecss}
+
+      :host {
           display: block;
         }
 

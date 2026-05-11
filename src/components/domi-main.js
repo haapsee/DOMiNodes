@@ -1,9 +1,12 @@
+import themecss from "@dominodes/style/theme.css?raw";
+
 export class DomiMain extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
+      ${themecss}
         main {
           background-color: var(--domi-bg-base);
           padding: var(--domi-padding) calc(2 * var(--domi-padding));

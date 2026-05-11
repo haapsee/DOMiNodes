@@ -1,3 +1,4 @@
+import themecss from "@dominodes/style/theme.css?raw";
 import { generateStyleVariants } from "../../utils/index.js";
 
 export class DomiCard extends HTMLElement {
@@ -6,6 +7,8 @@ export class DomiCard extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
+        ${themecss}
+
         :host {
           display: block;
           width: 100%;

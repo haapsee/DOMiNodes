@@ -1,3 +1,4 @@
+import themecss from "@dominodes/style/theme.css?raw";
 import { generateStyleVariants } from "../../utils/index.js";
 
 export class DomiBadge extends HTMLElement {
@@ -6,6 +7,8 @@ export class DomiBadge extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
         <style>
+        ${themecss}
+
         .badge {
           color: var(--domi-text);
           background-color: var(--domi-bg);

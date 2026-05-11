@@ -1,9 +1,13 @@
+import themecss from "@dominodes/style/theme.css?raw";
+
 export class DomiCardContent extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
+      ${themecss}
+
       :host {
         display: block;
         flex-grow: 1;

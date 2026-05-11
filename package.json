@@ -10,7 +10,7 @@
     "url": "https://github.com/haapsee/dominodes/issues"
   },
   "scripts": {
-    "dev": "npx serve",
+    "dev": "vite",
     "build": "vite build"
   },
   "exports": {

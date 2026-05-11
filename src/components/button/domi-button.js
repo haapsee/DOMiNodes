@@ -1,3 +1,5 @@
+import themecss from "@dominodes/style/theme.css?raw";
+
 export class DomiButton extends HTMLElement {
   constructor() {
     super();
@@ -6,6 +8,8 @@ export class DomiButton extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
         <style>
+          ${themecss}
+
           button {
             letter-spacing: 0.1em;
             background-color: var(--domi-bg-base, #007bff);

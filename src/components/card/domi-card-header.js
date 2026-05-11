@@ -1,9 +1,13 @@
+import themecss from "../../style/theme.css?raw";
+
 export class DomiCardHeader extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
+      ${themecss}
+
       :host {
         display: block;
         padding: var(--domi-padding);
