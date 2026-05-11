@@ -25,8 +25,12 @@ export class DomiButton extends HTMLElement {
             filter: brightness(0.8);
           }
 
-          :host([inline]) button {
-            display: inline-block;
+          :host([full-width]) {
+          width: 100%;
+          }
+
+          :host([full-width]) button {
+          width: 100%;
           }
 
           ${this.generateStyleVariants()}

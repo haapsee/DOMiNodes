@@ -16,7 +16,6 @@ export class DomiCardFooter extends HTMLElement {
           align-items: center;
           gap: var(--domi-gap);
           padding: var(--domi-padding);
-          border-top: 1px solid var(--domi-text);
           border-color: inherit;
         }
       </style>
