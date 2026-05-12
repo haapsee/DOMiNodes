@@ -19,3 +19,7 @@ export class DomiMain extends HTMLElement {
     `;
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-main")) {
+  customElements.define("domi-main", DomiMain);
+}

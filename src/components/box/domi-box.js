@@ -42,3 +42,7 @@ export class DomiBox extends HTMLElement {
     `;
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-box")) {
+  customElements.define("domi-box", DomiBox);
+}

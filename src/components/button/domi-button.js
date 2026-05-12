@@ -68,3 +68,7 @@ export class DomiButton extends HTMLElement {
     return str;
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-button")) {
+  customElements.define("domi-button", DomiButton);
+}

@@ -74,3 +74,7 @@ export class DomiForm extends HTMLElement {
     this.nativeForm.requestSubmit();
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-form")) {
+  customElements.define("domi-form", DomiForm);
+}

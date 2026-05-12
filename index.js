@@ -1,23 +1,25 @@
-import { DomiButton } from "./src/components/button/domi-button.js";
-import { DomiBox } from "./src/components/box/domi-box.js";
-import { DomiMain } from "./src/components/domi-main.js";
-import { DomiBadge } from "./src/components/badge/domi-badge.js";
-import { DomiCard } from "./src/components/card/domi-card.js";
-import { DomiCardHeader } from "./src/components/card/domi-card-header.js";
-import { DomiCardContent } from "./src/components/card/domi-card-content.js";
-import { DomiCardFooter } from "./src/components/card/domi-card-footer.js";
-import { DomiInput } from "./src/components/input/domi-input.js";
-import { DomiForm } from "./src/components/input/domi-form.js";
+export { DomiButton } from "./src/components/button/domi-button.js";
+export { DomiBox } from "./src/components/box/domi-box.js";
+export { DomiMain } from "./src/components/domi-main.js";
+export { DomiBadge } from "./src/components/badge/domi-badge.js";
+export { DomiCard } from "./src/components/card/domi-card.js";
+export { DomiCardHeader } from "./src/components/card/domi-card-header.js";
+export { DomiCardContent } from "./src/components/card/domi-card-content.js";
+export { DomiCardFooter } from "./src/components/card/domi-card-footer.js";
+export { DomiInput } from "./src/components/input/domi-input.js";
+export { DomiForm } from "./src/components/input/domi-form.js";
 
-window.customElements.define("domi-form", DomiForm);
-window.customElements.define("domi-input", DomiInput);
-window.customElements.define("domi-card-header", DomiCardHeader);
-window.customElements.define("domi-card-content", DomiCardContent);
-window.customElements.define("domi-card-footer", DomiCardFooter);
-window.customElements.define("domi-card", DomiCard);
-window.customElements.define("domi-badge", DomiBadge);
-window.customElements.define("domi-main", DomiMain);
-window.customElements.define("domi-box", DomiBox);
-window.customElements.define("domi-button", DomiButton);
-
-export { DomiButton };
+export async function defineDominodes() {
+  await Promise.all([
+    import("./src/components/button/domi-button.js"),
+    import("./src/components/box/domi-box.js"),
+    import("./src/components/domi-main.js"),
+    import("./src/components/badge/domi-badge.js"),
+    import("./src/components/card/domi-card.js"),
+    import("./src/components/card/domi-card-header.js"),
+    import("./src/components/card/domi-card-content.js"),
+    import("./src/components/card/domi-card-footer.js"),
+    import("./src/components/input/domi-input.js"),
+    import("./src/components/input/domi-form.js"),
+  ]);
+}

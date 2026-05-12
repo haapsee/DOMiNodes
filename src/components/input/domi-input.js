@@ -112,3 +112,7 @@ export class DomiInput extends HTMLElement {
     this.internals.setFormValue(v);
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-input")) {
+  customElements.define("domi-input", DomiInput);
+}

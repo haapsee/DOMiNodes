@@ -31,3 +31,7 @@ export class DomiCardContent extends HTMLElement {
       `;
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-card-content")) {
+  customElements.define("domi-card-content", DomiCardContent);
+}

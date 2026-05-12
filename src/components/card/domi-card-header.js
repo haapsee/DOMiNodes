@@ -25,3 +25,7 @@ export class DomiCardHeader extends HTMLElement {
       `;
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-card-header")) {
+  customElements.define("domi-card-header", DomiCardHeader);
+}

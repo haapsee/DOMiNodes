@@ -38,3 +38,7 @@ export class DomiBadge extends HTMLElement {
       `;
   }
 }
+
+if (typeof customElements !== "undefined" && !customElements.get("domi-badge")) {
+  customElements.define("domi-badge", DomiBadge);
+}
