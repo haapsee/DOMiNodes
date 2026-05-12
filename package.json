@@ -11,7 +11,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
   },
   "exports": {
     ".": {
@@ -19,6 +21,11 @@
       "require": "./dist/index.umd.js"
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "dominodes",
     "webcomponent",
