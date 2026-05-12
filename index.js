@@ -7,19 +7,4 @@ export { DomiCardHeader } from "./src/components/card/domi-card-header.js";
 export { DomiCardContent } from "./src/components/card/domi-card-content.js";
 export { DomiCardFooter } from "./src/components/card/domi-card-footer.js";
 export { DomiInput } from "./src/components/input/domi-input.js";
-export { DomiForm } from "./src/components/input/domi-form.js";
-
-export async function defineDominodes() {
-  await Promise.all([
-    import("./src/components/button/domi-button.js"),
-    import("./src/components/box/domi-box.js"),
-    import("./src/components/domi-main.js"),
-    import("./src/components/badge/domi-badge.js"),
-    import("./src/components/card/domi-card.js"),
-    import("./src/components/card/domi-card-header.js"),
-    import("./src/components/card/domi-card-content.js"),
-    import("./src/components/card/domi-card-footer.js"),
-    import("./src/components/input/domi-input.js"),
-    import("./src/components/input/domi-form.js"),
-  ]);
-}
+export { DomiForm } from "./src/components/form/domi-form.js";

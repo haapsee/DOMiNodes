@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
@@ -9,18 +8,21 @@ export default defineConfig({
     },
   },
   build: {
-    // Enable Library Mode
     lib: {
-      // Point this to your main index.ts file
-      entry: resolve(__dirname, "index.js"),
-
-      // The global variable name if someone includes your library via a <script> tag
+      entry: {
+        index: resolve(__dirname, "index.js"),
+        button: resolve(__dirname, "src/components/button/index.js"),
+        box: resolve(__dirname, "src/components/box/index.js"),
+        main: resolve(__dirname, "src/components/domi-main.js"),
+        badge: resolve(__dirname, "src/components/badge/index.js"),
+        card: resolve(__dirname, "src/components/card/index.js"),
+        form: resolve(__dirname, "src/components/form/index.js"),
+        input: resolve(__dirname, "src/components/input/index.js"),
+      },
       name: "dominodes",
 
-      // The name of the output files
-      fileName: (format) => `index.${format}.js`,
+      fileName: (format, entryName) => `${entryName}/index.${format}.js`,
     },
-    // Optional: Minify the output to make the file size smaller
     minify: "terser",
   },
 });

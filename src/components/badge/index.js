@@ -1,0 +1,1 @@
+export {DomiBadge} from "./domi-badge.js";

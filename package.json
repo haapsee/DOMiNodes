@@ -11,14 +11,54 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "rm -rf dist && vite build",
     "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "exports": {
     ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "import": "./dist/index/index.es.js",
+      "require": "./dist/index/index.cjs.js"
+    },
+    "./button": {
+      "import": "./dist/button/index.es.js",
+      "require": "./dist/button/index.cjs.js"
+    },
+    "./box": {
+      "import": "./dist/box/index.es.js",
+      "require": "./dist/box/index.cjs.js"
+    },
+    "./main": {
+      "import": "./dist/main/index.es.js",
+      "require": "./dist/main/index.cjs.js"
+    },
+    "./badge": {
+      "import": "./dist/badge/index.es.js",
+      "require": "./dist/badge/index.cjs.js"
+    },
+    "./card": {
+      "import": "./dist/card/index.es.js",
+      "require": "./dist/card/index.cjs.js"
+    },
+    "./card-header": {
+      "import": "./dist/card-header/index.es.js",
+      "require": "./dist/card-header/index.cjs.js"
+    },
+    "./card-content": {
+      "import": "./dist/card-content/index.es.js",
+      "require": "./dist/card-content/index.cjs.js"
+    },
+    "./card-footer": {
+      "import": "./dist/card-footer/index.es.js",
+      "require": "./dist/card-footer/index.cjs.js"
+    },
+    "./input": {
+      "import": "./dist/input/index.es.js",
+      "require": "./dist/input/index.cjs.js"
+    },
+    "./form": {
+      "import": "./dist/form/index.es.js",
+      "require": "./dist/form/index.cjs.js"
     }
   },
   "files": [
