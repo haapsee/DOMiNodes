@@ -1,3 +1,4 @@
+import { visualizer } from "rollup-plugin-visualizer";
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
@@ -8,6 +9,7 @@ export default defineConfig({
     },
   },
   build: {
+    plugins: [visualizer({ open: true, filename: 'bundle-analysis.html' })],
     lib: {
       entry: {
         index: resolve(__dirname, "index.js"),
@@ -24,5 +26,21 @@ export default defineConfig({
       fileName: (format, entryName) => `${entryName}/index.${format}.js`,
     },
     minify: "terser",
+    terserOptions: {
+      format: {
+        comments: false,
+      },
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ["unimportantFunction"],
+        passes: 5,
+      },
+      mangle: {
+        properties: {
+          regex: /^_/,
+        },
+      },
+    },
   },
 });
